@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeEats</title>
+    {{!-- <link rel="stylesheet" href="/css/style.css"> --}}
+</head>
+
+<body>
+    <header class="display-flex justify-space-between align-center p-2">
+        <h1>RecipeEats</h1>
+        <nav class="navigation-bar">
+            <ul>
+                <li>
+                    <a href="">Recipes</a>
+                </li>
+                <li>
+                    <a href="">Saved recipes</a>
+                </li>
+                <li>
+                    <a href="">My Post</a>
+                </li>
+                <li>
+                    {{#if loggedIn}}
+                    <a class="nav-item nav-link" href="/login" id="logout"><i class="bi bi-box-arrow-right"></i>Logout</a>
+                    {{else}}
+                    <a class="nav-item nav-link" href="/login"><i class="bi bi-box-arrow-in-right"></i>Login</a>
+                    {{/if}}
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="">
+        {{{ body }}}
+    </main>
+
+
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>
