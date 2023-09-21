@@ -5,37 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipeEats</title>
-    {{!-- <link rel="stylesheet" href="/css/style.css"> --}}
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header class="display-flex justify-space-between align-center p-2">
-        <h1>RecipeEats</h1>
-        <nav class="navigation-bar">
-            <ul>
-                <li>
-                    <a href="">Recipes</a>
-                </li>
-                <li>
-                    <a href="">Saved recipes</a>
-                </li>
-                <li>
-                    <a href="">My Post</a>
-                </li>
-                <li>
-                    {{#if loggedIn}}
-                    <a class="nav-item nav-link" href="/login" id="logout"><i class="bi bi-box-arrow-right"></i>Logout</a>
+    <div class="wrap flex flex-column">
+        <header class="flex flex-row w-100 items-center justify-around pv3 b--white header">
+            <h1>
+                <img class="db" src="/image/logo.svg" alt="logo">
+            </h1>
+            <nav class="navigation-bar">
+                <ul class="flex flex-row">
+                    <li class="f4-l">
+                        <a href="/">Home</a>
+                    </li>
+                    {{#if logged_in}}
+                    <li class="f4-l">
+                        <a href="/mypage">My page</a>
+                    </li>
+                    <li class="f4-l">
+                        <a href="" class="nav-item nav-link" id="logout">Logout</a>
+                    </li>
                     {{else}}
-                    <a class="nav-item nav-link" href="/login"><i class="bi bi-box-arrow-in-right"></i>Login</a>
+                    <li class="f4-l">
+                        <a class="nav-item nav-link" href="/login">Login</a>
+                    </li>
                     {{/if}}
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="">
-        {{{ body }}}
-    </main>
-
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="main-container overflow-auto">
+            {{{ body }}}
+        </main>
+    </div>
 
 
     {{#if logged_in}}

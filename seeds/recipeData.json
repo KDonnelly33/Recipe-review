@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Spaghetti Carbonara",
+        "ingredients": "200g spaghetti, 2 large eggs, 50g Pecorino Romano cheese, 50g guanciale, Salt and pepper to taste",
+        "instructions": "Cook spaghetti. Mix eggs, cheese, salt, and pepper. Cook guanciale until crispy. Toss cooked spaghetti in the pan with guanciale. Add egg mixture, toss well, and serve.",
+        "image_url": "https://example.com/spaghetti.jpg",
+        "user_id": 1,
+        "mealtype_id": 1
+    },
+    {
+        "title": "Chicken Stir-Fry",
+        "ingredients": "2 chicken breasts, 1 bell pepper, 1 onion, 2 cloves garlic, Soy sauce, Sesame oil, Rice vinegar",
+        "instructions": "Stir-fry chicken. Add bell pepper, onion, and garlic. Season with soy sauce, sesame oil, and rice vinegar. Serve over rice.",
+        "image_url": "https://example.com/chicken-stir-fry.jpg",
+        "user_id": 2,
+        "mealtype_id": 2
+    },
+    {
+        "title": "Vegetarian Pizza",
+        "ingredients": "Pizza dough, Tomato sauce, Mozzarella cheese, Bell peppers, Onions, Olives, Mushrooms",
+        "instructions": "Prepare pizza. Spread tomato sauce, cheese, and vegetables on dough. Bake until golden and bubbly.",
+        "image_url": "https://example.com/vegetarian-pizza.jpg",
+        "user_id": 1,
+        "mealtype_id": 3
+    },
+    {
+        "title": "Chocolate Chip Cookies",
+        "ingredients": "2 1/4 cups all-purpose flour, 1/2 teaspoon baking soda, 1 cup unsalted butter, 1/2 cup granulated sugar, 1 cup brown sugar, 1 teaspoon salt, 2 teaspoons pure vanilla extract, 2 large eggs, 2 cups chocolate chips",
+        "instructions": "Preheat oven. Beat butter, sugars, and vanilla. Add eggs, one at a time. Bake until golden. Cool on wire racks.",
+        "image_url": "https://example.com/chocolate-chip-cookies.jpg",
+        "user_id": 3,
+        "mealtype_id": 4
+    },
+    {
+        "title": "Mango Smoothie",
+        "ingredients": "1 ripe mango, 1/2 cup yogurt, 1/2 cup milk, Honey to taste, Ice cubes",
+        "instructions": "Blend mango, yogurt, milk, and honey until smooth. Add ice cubes and blend until creamy. Serve.",
+        "image_url": "https://example.com/mango-smoothie.jpg",
+        "user_id": 2,
+        "mealtype_id": 5
+    }
+]
