@@ -1,0 +1,30 @@
+<section class="flex flex-row w-100 relative main-section">
+    <div class="w-100 w-60-l main-background">
+        <img class="h-100" src="/image/main-bg.jpg" alt="food image">
+    </div>
+
+    <div class="flex flex-column justify-center w-40-l pv4 ph5-l ph2 absolute static-l main-text">
+        <span class="f7 relative dn db-l primary-color"><i>WELCOME TO OUR HOMEPAGE</i></span>
+        <h2 class="f1-l f2-m f3 section-title">Delicious Recipes</h2>
+        <p class="mw6-l lh-copy-l mt4 f5-l dn db-l">Our website is a delightful culinary journey where you can explore a world of
+            mouthwatering recipes, share your recipes, and connect with fellow food enthusiasts. Whether you're a seasoned chef or a kitchen newbie, join us to discover,
+            create, and savor delicious moments together.
+        </p>
+        <p class="mt3 mw6 f6 db dn-l">
+            Our website is a delightful culinary journey where you can explore a world of
+            mouthwatering recipes and connect with fellow food enthusiasts. 
+        </p>
+    </div>
+</section>
+
+
+<!-- Loop over each object in the recipes array -->
+<section class="pv5 ph5-l recipe-section">
+    <h3 class="f2-l f3-m f4 tc">Browse the Recipes</h3>
+    <p class="mt3 tc">Explore Diverse Recipes and Challenge Your Culinary Skills Today!</p>
+
+    <div class="recipe-lists">
+        {{#each recipes as |recipe| }}
+        {{/each}}
+    </div>
+</section>
