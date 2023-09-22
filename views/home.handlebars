@@ -22,11 +22,18 @@
 
 <!-- Loop over each object in the recipes array -->
 <section class="pv5 ph5-l recipe-section">
-    <h3 class="f2-l f3-m f4 tc">Browse the Recipes</h3>
-    <p class="mt3 tc">Explore Diverse Recipes and Challenge Your Culinary Skills Today!</p>
-
-    <div class="recipe-lists">
-        {{#each recipes as |recipe| }}
-        {{/each}}
+  <h3 class="f2-l f3-m f4 tc">Browse the Recipes</h3>
+  <p class="mt3 tc">Explore Diverse Recipes and Challenge Your Culinary Skills Today!</p>
+    <div>
+        {{#each recipes as |recipe|}}
+        <div class = "flex flex-column flex-row-l justify-center items-center-l">
+            <div class="flex flex-column justify-center items-center w-100 w-50-l">
+                <img class="w-100 w-80-l" src="{{recipe.image_url}}" alt="food image">
+            </div>
+            <div class="flex flex-column justify-center items-center w-100 w-50-l">
+                <h3 class="f3-l f4-m f5">{{recipe.title}}</h3>
+                <a href="/recipe/{{recipe.id}}" class="f6 link dim br2 ph3 pv2 mb2 dib  bg-primary-color">View Recipe</a>
+            </div>
     </div>
-</section>
+    {{/each}}
+    </div>
