@@ -1,42 +1,381 @@
 [
     {
-        "title": "Spaghetti Carbonara",
-        "ingredients": "200g spaghetti, 2 large eggs, 50g Pecorino Romano cheese, 50g guanciale, Salt and pepper to taste",
-        "instructions": "Cook spaghetti. Mix eggs, cheese, salt, and pepper. Cook guanciale until crispy. Toss cooked spaghetti in the pan with guanciale. Add egg mixture, toss well, and serve.",
-        "image_url": "https://example.com/spaghetti.jpg",
-        "user_id": 1,
-        "mealtype_id": 1
+      "title": "Scrambled Eggs",
+      "ingredients": "2 eggs, salt, pepper",
+      "instructions": "1. Crack the eggs into a bowl. 2. Add salt and pepper. 3. Scramble the eggs in a hot pan.",
+      "image_url": "https://kansaslivingmagazine.com/sites/default/files/scrambled_eggs.jpg",
+      "user_id": 1,
+      "mealtype_id": 1
     },
     {
-        "title": "Chicken Stir-Fry",
-        "ingredients": "2 chicken breasts, 1 bell pepper, 1 onion, 2 cloves garlic, Soy sauce, Sesame oil, Rice vinegar",
-        "instructions": "Stir-fry chicken. Add bell pepper, onion, and garlic. Season with soy sauce, sesame oil, and rice vinegar. Serve over rice.",
-        "image_url": "https://example.com/chicken-stir-fry.jpg",
-        "user_id": 2,
-        "mealtype_id": 2
+      "title": "Pasta Carbonara",
+      "ingredients": "Spaghetti, eggs, pancetta, Parmesan cheese",
+      "instructions": "1. Cook the spaghetti. 2. Fry the pancetta. 3. Mix eggs and cheese. 4. Combine everything.",
+      "image_url": "https://thestayathomechef.com/wp-content/uploads/2020/03/Pasta-Carbonara-2-3-scaled.jpg",
+      "user_id": 2,
+      "mealtype_id": 3
     },
     {
-        "title": "Vegetarian Pizza",
-        "ingredients": "Pizza dough, Tomato sauce, Mozzarella cheese, Bell peppers, Onions, Olives, Mushrooms",
-        "instructions": "Prepare pizza. Spread tomato sauce, cheese, and vegetables on dough. Bake until golden and bubbly.",
-        "image_url": "https://example.com/vegetarian-pizza.jpg",
-        "user_id": 1,
-        "mealtype_id": 3
+      "title": "Chicken Salad",
+      "ingredients": "Chicken breast, lettuce, tomatoes, dressing",
+      "instructions": "1. Grill the chicken. 2. Chop lettuce and tomatoes. 3. Add dressing.",
+      "image_url": "https://www.herwholesomekitchen.com/wp-content/uploads/2021/03/chickensalad.jpg",
+      "user_id": 3,
+      "mealtype_id": 2
     },
     {
-        "title": "Chocolate Chip Cookies",
-        "ingredients": "2 1/4 cups all-purpose flour, 1/2 teaspoon baking soda, 1 cup unsalted butter, 1/2 cup granulated sugar, 1 cup brown sugar, 1 teaspoon salt, 2 teaspoons pure vanilla extract, 2 large eggs, 2 cups chocolate chips",
-        "instructions": "Preheat oven. Beat butter, sugars, and vanilla. Add eggs, one at a time. Bake until golden. Cool on wire racks.",
-        "image_url": "https://example.com/chocolate-chip-cookies.jpg",
-        "user_id": 3,
-        "mealtype_id": 4
+      "title": "Spaghetti Bolognese",
+      "ingredients": "Ground beef, onion, garlic, tomato sauce, spaghetti",
+      "instructions": "1. Brown the ground beef and onion. 2. Add garlic and tomato sauce. 3. Serve over cooked spaghetti.",
+      "image_url": "https://tse3.mm.bing.net/th?id=OIP.YixleAz2dzjXRd3FGfaIlwHaE7&pid=Api&P=0&h=220",
+      "user_id": 4,
+      "mealtype_id": 3
     },
     {
-        "title": "Mango Smoothie",
-        "ingredients": "1 ripe mango, 1/2 cup yogurt, 1/2 cup milk, Honey to taste, Ice cubes",
-        "instructions": "Blend mango, yogurt, milk, and honey until smooth. Add ice cubes and blend until creamy. Serve.",
-        "image_url": "https://example.com/mango-smoothie.jpg",
-        "user_id": 2,
-        "mealtype_id": 5
-    }
-]
+      "title": "Caesar Salad",
+      "ingredients": "Romaine lettuce, croutons, Parmesan cheese, Caesar dressing",
+      "instructions": "1. Toss lettuce with croutons and cheese. 2. Drizzle with Caesar dressing.",
+      "image_url": "https://www.thespruceeats.com/thmb/Z6IWF7c9zywuU9maSIimGLbHoI4=/3000x2000/filters:fill(auto,1)/classic-caesar-salad-recipe-996054-Hero_01-33c94cc8b8e841ee8f2a815816a0af95.jpg",
+      "user_id": 5,
+      "mealtype_id": 2
+    },
+    {
+      "title": "Mushroom Risotto",
+      "ingredients": "Arborio rice, mushrooms, chicken broth, white wine",
+      "instructions": "1. Saute mushrooms. 2. Add rice and wine. 3. Gradually add broth until rice is tender.",
+      "image_url": "https://assets.epicurious.com/photos/5b23da4e0a49d7772e40f353/master/pass/Pot-Mushroom-Risotto-17042018.jpg",
+      "user_id": 1,
+      "mealtype_id": 3
+    },
+   
+        {
+          "title": "Homemade Pizza",
+          "ingredients": "Pizza dough, tomato sauce, mozzarella cheese, pepperoni",
+          "instructions": "1. Roll out the pizza dough. 2. Spread tomato sauce. 3. Add cheese and pepperoni. 4. Bake until golden brown.",
+          "image_url": "https://tse1.mm.bing.net/th?id=OIP.0KzriOUO1Sg0ACbXY4yH3AHaGd&pid=Api&P=0&h=220",
+          "user_id": 2,
+          "mealtype_id": 3
+        },
+        {
+          "title": "Omelette",
+          "ingredients": "Eggs, cheese, bell peppers, onions, salt, pepper",
+          "instructions": "1. Beat eggs. 2. Add cheese, peppers, onions, salt, and pepper. 3. Cook in a hot pan until set.",
+          "image_url": "https://i1.wp.com/news365.co.za/wp-content/uploads/2020/07/omelette-1.jpg?fit=1500%2C1125&ssl=1",
+          "user_id": 3,
+          "mealtype_id": 1
+        },
+        {
+          "title": "Grilled Cheese Sandwich",
+          "ingredients": "Bread, butter, cheddar cheese",
+          "instructions": "1. Butter bread slices. 2. Add cheese between slices. 3. Grill until cheese is melted and bread is toasted.",
+          "image_url": "https://tse4.mm.bing.net/th?id=OIP.jn3oUb1FoaDZGc6fO0hcwQHaEK&pid=Api&P=0&h=220",
+          "user_id": 4,
+          "mealtype_id": 2
+        },
+        {
+          "title": "Chicken Alfredo",
+          "ingredients": "Chicken breast, fettuccine pasta, Alfredo sauce",
+          "instructions": "1. Cook chicken. 2. Boil pasta. 3. Mix with Alfredo sauce.",
+          "image_url": "https://www.berlyskitchen.com/wp-content/uploads/2020/04/Chicken-Alfredo-Recipe-Featured-Image.jpg",
+          "user_id": 5,
+          "mealtype_id": 3
+        },
+        {
+          "title": "Greek Salad",
+          "ingredients": "Cucumbers, tomatoes, red onions, feta cheese, olives, Greek dressing",
+          "instructions": "1. Chop vegetables. 2. Add cheese and olives. 3. Drizzle with Greek dressing.",
+          "image_url": "https://www.thechunkychef.com/wp-content/uploads/2021/07/Greek-Salad-Recipe-recipe-card.jpg",
+          "user_id": 1,
+          "mealtype_id": 2
+        },
+        {
+          "title": "Sushi Rolls",
+          "ingredients": "Sushi rice, nori seaweed, cucumber, avocado, fish, soy sauce",
+          "instructions": "1. Spread rice on nori. 2. Add fillings. 3. Roll and slice. Serve with soy sauce.",
+          "image_url": "https://www.thespruceeats.com/thmb/IyxiJdbwFaixy4iolNYTLjBmW_w=/4288x2848/filters:fill(auto,1)/kimbap-korean-sushi-rolls-2118795-Hero-5b7dbdd346e0fb00250718b8.jpg",
+          "user_id": 2,
+          "mealtype_id": 3
+        },
+        {
+          "title": "Pancakes",
+          "ingredients": "Flour, milk, eggs, sugar, baking powder",
+          "instructions": "1. Mix ingredients. 2. Pour batter onto a hot griddle. 3. Flip when bubbles form.",
+          "image_url": "https://www.cookingclassy.com/wp-content/uploads/2021/05/pancakes-03.jpg",
+          "user_id": 3,
+          "mealtype_id": 1
+        },
+        {
+          "title": "Caprese Salad",
+          "ingredients": "Tomatoes, mozzarella cheese, basil, balsamic glaze",
+          "instructions": "1. Slice tomatoes and cheese. 2. Arrange with basil. 3. Drizzle with balsamic glaze.",
+          "image_url": "https://www.cookingclassy.com/wp-content/uploads/2020/07/caprese-salad-33.jpg",
+          "user_id": 4,
+          "mealtype_id": 2
+        },
+        {
+          "title": "Beef Stir-Fry",
+          "ingredients": "Beef strips, broccoli, bell peppers, soy sauce, garlic, ginger",
+          "instructions": "1. Stir-fry beef with garlic and ginger. 2. Add vegetables and soy sauce. 3. Cook until tender.",
+          "image_url": "https://www.twopeasandtheirpod.com/wp-content/uploads/2020/03/Beef-Stir-Fry-7.jpg",
+          "user_id": 5,
+          "mealtype_id": 3
+        },
+        {
+          "title": "Veggie Wrap",
+          "ingredients": "Tortilla, hummus, spinach, tomatoes, cucumbers, carrots",
+          "instructions": "1. Spread hummus on tortilla. 2. Add veggies. 3. Roll up and enjoy.",
+          "image_url": "https://eatplant-based.com/wp-content/uploads/2014/12/Veggie-Wraps-735x980.jpg",
+          "user_id": 1,
+          "mealtype_id": 2
+        },
+            {
+              "title": "Grilled Salmon",
+              "ingredients": "Salmon fillet, lemon, olive oil, salt, pepper",
+              "instructions": "1. Season salmon with salt, pepper, and lemon juice. 2. Grill until cooked through.",
+              "image_url": "https://media.istockphoto.com/id/1214416414/photo/barbecued-salmon-fried-potatoes-and-vegetables-on-wooden-background.jpg?s=612x612&w=0&k=20&c=Y8RYbZFcvec-FXMMuoU-qkprC3TUFNiw3Ysoe8Drn6g=",
+              "user_id": 2,
+              "mealtype_id": 3
+            },
+            {
+              "title": "Vegetable Stir-Fry",
+              "ingredients": "Mixed vegetables, tofu, soy sauce, ginger, garlic",
+              "instructions": "1. Stir-fry tofu with ginger and garlic. 2. Add mixed vegetables and soy sauce. 3. Cook until tender.",
+              "image_url": "https://therecipecritic.com/wp-content/uploads/2019/08/vegetable_stir_fry.jpg",
+              "user_id": 3,
+              "mealtype_id": 2
+            },
+            {
+              "title": "Homemade Lasagna",
+              "ingredients": "Lasagna noodles, ground beef, ricotta cheese, marinara sauce",
+              "instructions": "1. Cook noodles. 2. Brown beef and mix with sauce. 3. Layer noodles, beef, and ricotta. 4. Bake.",
+              "image_url": "https://bakerbynature.com/wp-content/uploads/2020/07/The-Best-Homemade-Lasagna-Recipe-w987654432111123456789-1-of-1.jpg",
+              "user_id": 4,
+              "mealtype_id": 3
+            },
+            {
+              "title": "Fruit Salad",
+              "ingredients": "Assorted fruits (e.g., strawberries, grapes, melon), honey, lime juice",
+              "instructions": "1. Slice fruits. 2. Drizzle with honey and lime juice. 3. Toss to combine.",
+              "image_url": "https://bakerbynature.com/wp-content/uploads/2020/07/The-Best-Homemade-Lasagna-Recipe-w987654432111123456789-1-of-1.jpg",
+              "user_id": 5,
+              "mealtype_id": 1
+            },
+            {
+              "title": "Beef Tacos",
+              "ingredients": "Ground beef, taco seasoning, tortillas, lettuce, cheese, salsa",
+              "instructions": "1. Cook beef with taco seasoning. 2. Fill tortillas with beef, lettuce, cheese, and salsa.",
+              "image_url": "https://loveandgoodstuff.com/wp-content/uploads/2020/08/classic-ground-beef-tacos-1200x1200.jpg",
+              "user_id": 1,
+              "mealtype_id": 2
+            },
+            {
+              "title": "Lemon Garlic Shrimp",
+              "ingredients": "Shrimp, garlic, lemon juice, butter, parsley",
+              "instructions": "1. Saute shrimp with garlic, lemon juice, and butter. 2. Garnish with parsley.",
+              "image_url": "https://www.chelseasmessyapron.com/wp-content/uploads/2018/02/Lemon-Garlic-Shrimp-2.jpeg",
+              "user_id": 2,
+              "mealtype_id": 3
+            },
+            {
+              "title": "Avocado Toast",
+              "ingredients": "Bread, avocado, olive oil, salt, pepper, red pepper flakes",
+              "instructions": "1. Mash avocado and spread on toasted bread. 2. Drizzle with olive oil and seasonings.",
+              "image_url": "https://www.eatingwell.com/thmb/CTSAuY2CRbo0Ivw4wbfIydhy7Qw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1807w-avocado-toast-recipe-8029771-2000-aefaa92c11e74e80b0bfc15788a61465.jpg",
+              "user_id": 3,
+              "mealtype_id": 1
+            },
+            {
+              "title": "Mango Salsa",
+              "ingredients": "Mango, red onion, cilantro, lime juice, jalapeño",
+              "instructions": "1. Dice mango, onion, and jalapeño. 2. Mix with cilantro and lime juice.",
+              "image_url": "https://www.eatingwell.com/thmb/CTSAuY2CRbo0Ivw4wbfIydhy7Qw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1807w-avocado-toast-recipe-8029771-2000-aefaa92c11e74e80b0bfc15788a61465.jpg",
+              "user_id": 4,
+              "mealtype_id": 5
+            },
+            {
+              "title": "Beef and Broccoli",
+              "ingredients": "Beef strips, broccoli florets, soy sauce, garlic, brown sugar",
+              "instructions": "1. Stir-fry beef with garlic, soy sauce, and sugar. 2. Add broccoli and cook until tender.",
+              "image_url": "https://natashaskitchen.com/wp-content/uploads/2019/08/Beef-and-Broccoli-2-500x500.jpg",
+              "user_id": 5,
+              "mealtype_id": 3
+            },
+            {
+              "title": "Pesto Pasta",
+              "ingredients": "Pasta, basil pesto, cherry tomatoes, Parmesan cheese",
+              "instructions": "1. Cook pasta. 2. Toss with pesto, tomatoes, and cheese.",
+              "image_url": "https://recipetineats.com/wp-content/uploads/2019/02/Pesto-Pasta_2-1.jpg",
+              "user_id": 1,
+              "mealtype_id": 1
+            },
+                {
+                  "title": "Crispy Chicken Wings",
+                  "ingredients": "Chicken wings, flour, salt, pepper, oil",
+                  "instructions": "1. Coat chicken wings in flour, salt, and pepper. 2. Fry until crispy and golden brown.",
+                  "image_url": "https://www.lifesambrosia.com/wp-content/uploads/Deep-Fried-Chicken-Wings-Recipe-Photo-11-562x848.jpg",
+                  "user_id": 2,
+                  "mealtype_id": 3
+                },
+                {
+                  "title": "Spinach and Feta Stuffed Chicken Breast",
+                  "ingredients": "Chicken breast, spinach, feta cheese, garlic, olive oil",
+                  "instructions": "1. Slice a pocket into the chicken breast. 2. Stuff with spinach and feta. 3. Sear in olive oil.",
+                  "image_url": "https://www.eatingwell.com/thmb/lAEwtQROBY8pEVjuip5Q-eSfQ3U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1501p130-spinach-feta-stuffed-chicken-breasts-8030825-66b09a00be4340c6a6af32fda656319c.jpg",
+                  "user_id": 3,
+                  "mealtype_id": 2
+                },
+                {
+                  "title": "Tomato Basil Bruschetta",
+                  "ingredients": "Baguette, tomatoes, fresh basil, garlic, olive oil",
+                  "instructions": "1. Slice and toast baguette. 2. Top with diced tomatoes, basil, and garlic. 3. Drizzle with olive oil.",
+                  "image_url": "https://cookieandkate.com/images/2019/08/tomato-bruschetta-with-balsamic-drizzle.jpg",
+                  "user_id": 4,
+                  "mealtype_id": 1
+                },
+                {
+                  "title": "Mango Smoothie",
+                  "ingredients": "Mango, yogurt, honey, ice",
+                  "instructions": "1. Blend mango, yogurt, honey, and ice until smooth.",
+                  "image_url": "https://www.acouplecooks.com/wp-content/uploads/2020/06/Mango-Smoothie-007.jpg",
+                  "user_id": 5,
+                  "mealtype_id": 5
+                },
+                {
+                  "title": "Beef and Vegetable Kebabs",
+                  "ingredients": "Beef cubes, bell peppers, onions, zucchini, marinade",
+                  "instructions": "1. Marinate beef and vegetables. 2. Thread onto skewers. 3. Grill until cooked.",
+                  "image_url": "https://www.eatingwell.com/thmb/mEa_MI7uxL0XaM1lgdg5v2Nk53s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6839657-218cc0fba14f4502b750de8c1600f51c.jpg",
+                  "user_id": 1,
+                  "mealtype_id": 3
+                },
+                {
+                  "title": "Lentil Soup",
+                  "ingredients": "Lentils, onions, carrots, celery, garlic, broth",
+                  "instructions": "1. Saute vegetables. 2. Add lentils and broth. 3. Simmer until lentils are tender.",
+                  "image_url": "https://www.noracooks.com/wp-content/uploads/2018/11/square-1.jpg",
+                  "user_id": 2,
+                  "mealtype_id": 1
+                },
+                {
+                  "title": "Shrimp Scampi",
+                  "ingredients": "Shrimp, butter, garlic, lemon juice, white wine, parsley",
+                  "instructions": "1. Saute shrimp in garlic and butter. 2. Add lemon juice, white wine, and parsley.",
+                  "image_url": "https://www.allrecipes.com/thmb/jiV_4f8vXFle1RdFLgd8-_31J3M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/229960-shrimp-scampi-with-pasta-DDMFS-4x3-e065ddef4e6d44479d37b4523808cc23.jpg",
+                  "user_id": 3,
+                  "mealtype_id": 2
+                },
+                {
+                  "title": "Quinoa Salad",
+                  "ingredients": "Quinoa, cucumbers, cherry tomatoes, red onion, feta cheese, vinaigrette",
+                  "instructions": "1. Cook quinoa. 2. Mix with veggies, feta, and vinaigrette.",
+                  "image_url": "https://www.cookingclassy.com/wp-content/uploads/2020/01/quinoa-salad-16.jpg",
+                  "user_id": 4,
+                  "mealtype_id": 3
+                },
+                {
+                  "title": "Chocolate Chip Cookies",
+                  "ingredients": "Flour, butter, sugar, chocolate chips, eggs, vanilla extract",
+                  "instructions": "1. Cream butter and sugar. 2. Add eggs and vanilla. 3. Mix in flour and chocolate chips. 4. Bake.",
+                  "image_url": "https://sallysbakingaddiction.com/wp-content/uploads/2013/05/classic-chocolate-chip-cookies.jpg",
+                  "user_id": 5,
+                  "mealtype_id": 4
+                },
+                {
+                  "title": "Cobb Salad",
+                  "ingredients": "Lettuce, chicken breast, bacon, eggs, tomatoes, blue cheese, vinaigrette",
+                  "instructions": "1. Chop lettuce and top with grilled chicken, bacon, eggs, tomatoes, and blue cheese. 2. Drizzle with vinaigrette.",
+                  "image_url": "https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/1600x1200/sd-aspect-1520887294-cobb-salad-delish.jpg?resize=1200:*",
+                  "user_id": 1,
+                  "mealtype_id": 2
+                },
+                {
+                    "title": "Chocolate Cake",
+                    "ingredients": "Flour, sugar, cocoa powder, eggs, butter, milk, baking powder, vanilla extract",
+                    "instructions": "1. Mix dry ingredients. 2. Add wet ingredients. 3. Bake until a toothpick comes out clean.",
+                    "image_url": "https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg",
+                    "user_id": 1,
+                    "mealtype_id": 4
+                  },
+                  {
+                    "title": "Vanilla Ice Cream",
+                    "ingredients": "Heavy cream, milk, sugar, vanilla extract, egg yolks",
+                    "instructions": "1. Heat milk, cream, and sugar until sugar dissolves. 2. Temper egg yolks and add to mixture. 3. Chill and churn in an ice cream maker.",
+                    "image_url": "https://laurenslatest.com/wp-content/uploads/2020/08/vanilla-ice-cream-5-copy.jpg",
+                    "user_id": 2,
+                    "mealtype_id": 4
+                  },
+                  {
+                    "title": "Strawberry Shortcake",
+                    "ingredients": "Strawberries, shortcakes, whipped cream",
+                    "instructions": "1. Slice strawberries and sweeten. 2. Assemble shortcakes with strawberries and whipped cream.",
+                    "image_url": "https://celebratingsweets.com/wp-content/uploads/2018/06/Strawberry-Shortcake-Cake-1-1.jpg",
+                    "user_id": 3,
+                    "mealtype_id": 4
+                  },
+                  {
+                    "title": "Apple Pie",
+                    "ingredients": "Apples, sugar, cinnamon, flour, pie crust",
+                    "instructions": "1. Slice apples and mix with sugar and cinnamon. 2. Fill pie crust and bake until golden brown.",
+                    "image_url": "https://hips.hearstapps.com/hmg-prod/images/apple-pie-index-6425bd0363f16.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*",
+                    "user_id": 4,
+                    "mealtype_id": 4
+                  },
+                  {
+                    "title": "Raspberry Cheesecake",
+                    "ingredients": "Cream cheese, graham crackers, sugar, eggs, vanilla extract, raspberry sauce",
+                    "instructions": "1. Make graham cracker crust. 2. Mix cream cheese, sugar, eggs, and vanilla. 3. Bake and top with raspberry sauce.",
+                    "image_url": "https://drivemehungry.com/wp-content/uploads/2022/07/raspberry-cheesecake-10.jpg",
+                    "user_id": 1,
+                    "mealtype_id": 4
+                  },
+                  {
+                    "title": "Tiramisu",
+                    "ingredients": "Ladyfingers, mascarpone cheese, espresso, cocoa powder, eggs, sugar",
+                    "instructions": "1. Dip ladyfingers in espresso. 2. Layer with mascarpone mixture. 3. Dust with cocoa powder.",
+                    "image_url": "https://sallysbakingaddiction.com/wp-content/uploads/2019/06/homemade-tiramisu-2.jpg",
+                    "user_id": 2,
+                    "mealtype_id": 4
+                  },
+                  {
+                    "title": "Lemon Bars",
+                    "ingredients": "Flour, sugar, butter, lemon juice, eggs, powdered sugar",
+                    "instructions": "1. Make shortbread crust. 2. Mix lemon juice, eggs, and sugar. 3. Pour over crust and bake.",
+                    "image_url": "https://preppykitchen.com/wp-content/uploads/2020/02/Lemon-bars-1x1-2.jpg",
+                    "user_id": 3,
+                    "mealtype_id": 4
+                  },
+                  {
+                    "title": "Popcorn",
+                    "ingredients": "Popcorn kernels, butter, salt",
+                    "instructions": "1. Pop popcorn kernels. 2. Melt butter and drizzle over popcorn. 3. Sprinkle with salt.",
+                    "image_url": "https://www.simplyrecipes.com/thmb/Xzggu-Md45HKhhYSw4DK8tGlZ_I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Perfect-Popcorn-LEAD-41-4a75a18443ae45aa96053f30a3ed0a6b.JPG",
+                    "user_id": 1,
+                    "mealtype_id": 5
+                  },
+                  {
+                    "title": "Guacamole",
+                    "ingredients": "Avocados, tomatoes, onions, lime juice, cilantro, salt",
+                    "instructions": "1. Mash avocados. 2. Add diced tomatoes, onions, lime juice, cilantro, and salt.",
+                    "image_url": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/04/Guacamole-1-2.jpg",
+                    "user_id": 2,
+                    "mealtype_id": 5
+                  },
+                  {
+                    "title": "Hummus",
+                    "ingredients": "Chickpeas, tahini, garlic, lemon juice, olive oil",
+                    "instructions": "1. Blend chickpeas, tahini, garlic, and lemon juice. 2. Drizzle with olive oil.",
+                    "image_url": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg",
+                    "user_id": 3,
+                    "mealtype_id": 5
+                  },
+                  {
+                    "title": "Trail Mix",
+                    "ingredients": "Nuts, dried fruits, chocolate chips, pretzels",
+                    "instructions": "1. Mix nuts, dried fruits, chocolate chips, and pretzels in a bowl.",
+                    "image_url": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg",
+                    "user_id": 4,
+                    "mealtype_id": 5
+                  }
+               
+              ]
+              
