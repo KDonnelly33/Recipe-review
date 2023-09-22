@@ -1,1 +1,17 @@
-This is my page (for bookmarking, posting management)
+    <!-- Recipe Reviews Section -->
+    <section class="mv4">
+        <h2 class="f3">My Recipe Reviews</h2>
+        <ul class="list pl0">
+            {{#each reviews as |review|}}
+            <li class="flex items-center justify-between pv2">
+                <div>
+                    <h3 class="f4">Recipe: {{review.recipe.recipeName}}</h3>
+                    <p class="f5">Meal Type: {{review.recipe.mealType}}</p>
+                    <p class="f6">Rating: {{review.rating}} stars</p>
+                    <p class="f6">Comment: {{review.comment}}</p>
+                </div>
+                <button class="bg-red white bn br-pill ph2">Delete</button>
+            </li>
+            {{/each}}
+        </ul>
+    </section>
