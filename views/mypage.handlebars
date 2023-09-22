@@ -1,55 +1,17 @@
-<!--This is my page (for bookmarking, posting management) -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Recipe Reviews</title>
-    <!-- Include Tachyons CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-    <!-- Include your custom CSS file if needed -->
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <header class="bg-light-blue pa3">
-        <!-- Include your site's header here -->
-        <nav>
-            <!-- Navigation menu or logo -->
-        </nav>
-    </header>
-    
-    <main class="pa4">
-        <!-- User Profile Section -->
-        <section class="mv4">
-            <h1 class="f2">My Recipe Reviews</h1>
-            <div class="flex items-center">
-                <img src="#" class="br-100 h3 w3 dib" alt="User Profile Image">
-                <div class="ml3">
-                    <h2 class="f3">Username: {{username}}</h2>
-                    <p class="f4">Email: {{email}}</p>
+    <!-- Recipe Reviews Section -->
+    <section class="mv4">
+        <h2 class="f3">My Recipe Reviews</h2>
+        <ul class="list pl0">
+            {{#each reviews as |review|}}
+            <li class="flex items-center justify-between pv2">
+                <div>
+                    <h3 class="f4">Recipe: {{review.recipe.recipeName}}</h3>
+                    <p class="f5">Meal Type: {{review.recipe.mealType}}</p>
+                    <p class="f6">Rating: {{review.rating}} stars</p>
+                    <p class="f6">Comment: {{review.comment}}</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Recipe Reviews Section -->
-        <section class="mv4">
-            <h2 class="f3">My Recipe Reviews</h2>
-            <ul class="list pl0">
-                {{#each reviews as |review|}}
-                <li class="flex items-center justify-between pv2">
-                    <div>
-                        <h3 class="f4">{{review.recipeName}}</h3>
-                        <p class="f5">{{review.rating}} stars</p>
-                        <p class="f6">{{review.comment}}</p>
-                    </div>
-                    <button class="bg-red white bn br-pill ph2">Delete</button>
-                </li>
-                {{/each}}
-            </ul>
-        </section>
-    </main>
-
-    <footer class="bg-light-blue pa3">
-        <!-- Include your site's footer here -->
-        <p class="white">&copy; 2023 Authentic Recipe Review</p>
-    </footer>
-</body>
-</html>
+                <button class="bg-red white bn br-pill ph2">Delete</button>
+            </li>
+            {{/each}}
+        </ul>
+    </section>
