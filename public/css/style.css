@@ -5,6 +5,11 @@
     --light: #f3ece6;
     --black: #3b3b3b;
     --grey: #f8f9fa;
+
+    
+}
+.bg-background-color {
+    background-color: rgba(243,236,230,0.7);
 }
 
 html, 

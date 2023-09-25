@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Recipe, User } = require('../models');
+const { Recipe, User, Comment } = require('../models');
 // const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -28,11 +28,14 @@ router.get('/', async (req, res) => {
 router.get('/recipe/:id', async (req, res) => {
     try {
         const recipeData = await Recipe.findByPk(req.params.id, {
-            include: [{
-                model: User,
-                attributes: ['username'],
-            }, ],
-        });
+        include: [
+        User,
+        {
+          model: Comment,
+          include: [User],
+        },
+      ],
+    });
 
         const recipe = recipeData.get({ plain: true });
 
@@ -40,6 +43,7 @@ router.get('/recipe/:id', async (req, res) => {
             ...recipe,
             logged_in: req.session.logged_in
         });
+        console.log(recipe)
     } catch (err) {
         res.status(500).json(err);
     }

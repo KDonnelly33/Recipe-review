@@ -1,9 +1,9 @@
-<section class="flex flex-row w-100 relative main-section">
+<section class="flex flex-row w-100 shadow-5 relative main-section">
     <div class="w-100 w-60-l main-background">
         <img class="h-100" src="/image/main-bg.jpg" alt="food image">
     </div>
 
-    <div class="flex flex-column justify-center w-40-l pv4 ph5-l ph2 absolute static-l main-text">
+    <div class="flex flex-column  justify-center w-40-l pv4 ph5-l ph2 absolute static-l main-text">
         <span class="f7 relative dn db-l primary-color"><i>WELCOME TO OUR HOMEPAGE</i></span>
         <h2 class="f1-l f2-m f3 section-title">Delicious Recipes</h2>
         <p class="mw6-l lh-copy-l mt4 f5-l dn db-l">Our website is a delightful culinary journey where you can explore a world of
@@ -30,6 +30,7 @@
             </div>
             <div class="flex flex-column justify-center items-center w-100 w-50-l">
                 <h3 class="f3-l f4-m f5">{{recipe.title}}</h3>
+                <p class="f6-l f7-m f8">{{format_date recipe.date_created}}</p>
                 <a href="/recipe/{{recipe.id}}" class="f6 link dim br2 ph3 pv2 mb2 dib  bg-primary-color">View Recipe</a>
             </div>
     </div>

@@ -1,1 +1,59 @@
-This is recipe handlebars
+{{!-- This is recipe handlebars --}}
+<section class="">
+   {{!-- show title of recipe --}}
+   <div>
+      <h1 class="f2 fw6 mb2 tc underline tc-pink-2  ">{{title}}</h1>
+      {{!-- show image --}}
+      <p class="tc">Created by </br> {{user.username}} on {{format_date date_created}}</p>
+   </div>
+   <aside class = "flex flex-column flex-row-l shadow-5 mb2 mt2">
+      <div class=" ml3 mr3 mr0-l w-80-l">
+         <img src="{{image_url}}" alt="recipe image">
+         {{!-- show ingredients --}}
+      </div>
+      <div class = "bg-background-color ml3 mr3 mr0-l ml0-l pa1">
+         <h1 class="tc f3">Ingredients: </h1>
+         <p class=" mb2 ml2 tc">{{ingredients}}</p>
+         {{!-- show instructions --}}
+         <h1 class="tc f3">Instructions: </h1>
+         <p class="ml2 tc">{{instructions}}</p>
+      </div>
+      {{!-- show date created --}}
+   </aside>
+   {{!-- show user who created recipe --}}
+</section>
+
+   {{!-- show comments if there are comments --}}
+   <div class="flex flex-column flex-row-l flex-wrap-l justify-around-l ">
+   {{#if comments}}
+
+   {{#each comments}}
+   <div class="ba bw2 br3 pa1 ma2 bg-background-color w-40-l shadow-5" style="border-color: #e6c3b8">
+      <h3 class = "tc">{{comment}} </h3>
+      <div class="f7 tc">Posted by {{user.username}} on {{format_date date_created}}
+
+      </div>
+   </div>
+
+   {{/each}}
+   {{!-- if post has no comments post no comments --}}
+   {{else}}
+   <div class="f1">No comments yet... Be the first to add one!</div>
+   {{/if}}
+   </div>
+
+   <form id="newcommentForm">
+
+      <div class="tc">
+         <h3>Add New Comment below!</h3>
+      </div>
+
+      <div class="flex justify-center mb3 flex-column flex-row-l justify-around-l">
+         <input type="hidden" name="recipe-id" value="{{id}}" />
+         <label for="comment-body"></label>
+         <textarea class="grow input-reset ma2  mr4 ml4 br4 b--black-20 pa3 w-100 w-60-l"  id="#new-body" name="comment-body"></textarea>
+         <button  class="grow pointer f6 link dim  ma2 br3 ph3 pv2 mb2 dib white w-20-l"  style="background-color: #e6c3b8" type="submit">Submit</button>
+      </div>
+   </form>
+
+   <script src="/js/comment.js"></script>
