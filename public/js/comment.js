@@ -9,7 +9,7 @@ const commentHandler = async (event) => {
             body: JSON.stringify({recipe_id, comment}),
             headers: {'Content-Type': 'application/json'}
         })
-        // document.location.reload();
+        document.location.reload();
     }
 }
 document.querySelector('#newcommentForm').addEventListener('submit', commentHandler);
