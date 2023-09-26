@@ -1,17 +1,36 @@
-    <!-- Recipe Reviews Section -->
-    <section class="mv4">
-        <h2 class="f3">My Recipe Reviews</h2>
-        <ul class="list pl0">
-            {{#each reviews as |review|}}
-            <li class="flex items-center justify-between pv2">
-                <div>
-                    <h3 class="f4">Recipe: {{review.recipe.recipeName}}</h3>
-                    <p class="f5">Meal Type: {{review.recipe.mealType}}</p>
-                    <p class="f6">Rating: {{review.rating}} stars</p>
-                    <p class="f6">Comment: {{review.comment}}</p>
+<!-- Recipe Reviews Section -->
+<section class="mv5">
+    <div class="flex flex-column items-center new-post-box">
+        <h2 class="f3">Create a post</h2>
+        <p class="f4 mt2 tc">
+            Feeling creative in the kitchen?<br />
+            Share your culinary masterpiece with the world🍽️
+        </p>
+        <div class="mt3 black-bg br3 new-post">
+            <a href="/newpost" class="ph4 pv3 db b white tc">+ New post</a>
+        </div>
+    </div>
+
+    <div class="mt5 my-recipe-box">
+        <h2 class="f3 tc mb4">My Recipe Lists</h2>
+        <ul class="center mw7-l w-100">
+            {{#each recipes as |recipe|}}
+            <li class="flex flex-column flex-row-m flex-row-l justify-between items-center w-100 mr3 mb3 pa3 recipe-card">
+                <div class="flex flex-column flex-row-l items-center items-stretch-m">
+                    <h4 class="f4-l f6 fw5 tc mr2">
+                        {{recipe.title}}
+                    </h4>
+                    <p class="f6-l f8">{{format_date recipe.date_created}}</p>
                 </div>
-                <button class="bg-red white bn br-pill ph2">Delete</button>
+                <div class="mt2 mt0-m mt0-l">
+                    <a href="/recipe/{{recipe.id}}" class="f6 br2 ph3 pv2 dib primary-bg view-recipe">View</a>
+                    <button type="button" class="f6 br2 ph3 pv2 dib grey-bg" id="delete-btn">Delete</button>
+                </div>
             </li>
             {{/each}}
         </ul>
-    </section>
+    </div>
+</section>
+
+
+<script src="/js/delete-post.js"></script>
