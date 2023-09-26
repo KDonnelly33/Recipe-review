@@ -16,21 +16,22 @@
             <h1>
                 <img class="db" src="/image/logo.svg" alt="logo">
             </h1>
-            <nav class="navigation-bar">
+            <nav class="navigation-bar ">
                 <ul class="flex flex-row">
                     <li class="f4-l">
-                        <a href="/">Home</a>
+                        <a class="dim" href="/">Home</a>
                     </li>
+                  
                     {{#if logged_in}}
                     <li class="f4-l">
-                        <a href="/mypage">My page</a>
+                        <a class="dim" href="/mypage">My page</a>
                     </li>
                     <li class="f4-l">
-                        <a href="" class="nav-item nav-link" id="logout">Logout</a>
+                        <a href="" class="nav-item nav-link dim" id="logout">Logout</a>
                     </li>
                     {{else}}
                     <li class="f4-l">
-                        <a class="nav-item nav-link" href="/login">Login</a>
+                        <a class="nav-item nav-link dim" href="/login">Login</a>
                     </li>
                     {{/if}}
                 </ul>
@@ -42,10 +43,23 @@
         </main>
     </div>
 
-
+<footer class=" w-100">
+      <div class="flex flex-column justify-center bg-background-color py-4 flex-row-l justify-around" style="color: #e6c3b8">
+        <h4 class="tc f3 font-semibold">
+          Made by: <span class="" >Team 3</span>
+        </h4>
+        <div class="flex flex-column justify-center underline items-center f4  flex-row-l justify-around-l w-60-l">
+          <a class="hover-black" href = "https://github.com/KDonnelly33" target="_blank">Kevin Donnelly</a>
+         <!--these lines are in the header and tell it to display a link to everyones github page but replace the text of the url with everyones full name-->
+          <a class="hover-black" href="https://github.com/YISEO" target="_blank">Joy Yiseao Kwon</a>
+           
+          <a class="hover-black" href="https://github.com/abdulsamedtma" target="_blank">Abdul Samed Alhassan</a>
+      </div>
+    </footer>
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
+
 </body>
 
 </html>
