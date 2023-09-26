@@ -14,7 +14,9 @@
     <div class="wrap flex flex-column">
         <header class="flex flex-row w-100 items-center justify-around pv3 b--white header">
             <h1>
-                <img class="db" src="/image/logo.svg" alt="logo">
+                <a href="/">
+                    <img class="db" src="/image/logo.svg" alt="logo">
+                </a>
             </h1>
             <nav class="navigation-bar ">
                 <ul class="flex flex-row">
@@ -38,20 +40,20 @@
             </nav>
         </header>
         
-        <main class="main-container overflow-auto">
+        <main class="pb4 main-container overflow-auto">
             {{{ body }}}
         </main>
     </div>
 
-<footer class=" w-100">
-      <div class="flex flex-column justify-center bg-background-color py-4 flex-row-l justify-around" style="color: #e6c3b8">
+<footer class="fixed-l left-0 bottom-0 pv2 w-100 light-bg">
+      <div class="flex flex-column justify-center py-4 flex-row-l justify-around" style="color: #e6c3b8">
         <h4 class="tc f3 font-semibold">
           Made by: <span class="" >Team 3</span>
         </h4>
         <div class="flex flex-column justify-center underline items-center f4  flex-row-l justify-around-l w-60-l">
           <a class="hover-black" href = "https://github.com/KDonnelly33" target="_blank">Kevin Donnelly</a>
          <!--these lines are in the header and tell it to display a link to everyones github page but replace the text of the url with everyones full name-->
-          <a class="hover-black" href="https://github.com/YISEO" target="_blank">Joy Yiseao Kwon</a>
+          <a class="hover-black" href="https://github.com/YISEO" target="_blank">Joy Yiseo Kwon</a>
            
           <a class="hover-black" href="https://github.com/abdulsamedtma" target="_blank">Abdul Samed Alhassan</a>
       </div>
@@ -59,7 +61,21 @@
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function sweetalert(icon, title) {
+            Swal.fire({
+                icon: icon,
+                title: title,
+                timer: 2000,
+                showConfirmButton: false,
+            })
+            .then(function(result) {
+                document.location.reload();
+            });
+        }
+    </script>
 </body>
 
 </html>

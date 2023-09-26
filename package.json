@@ -20,6 +20,7 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.6.1",
     "sequelize": "^6.33.0",
+    "sweetalert2": "^11.7.31",
     "tachyons": "^4.12.0"
   }
 }

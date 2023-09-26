@@ -39,25 +39,4 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.delete('/:id', withAuth, (req, res) => {
-    Recipe.destroy({
-        where: {
-            id: req.params.id
-        }
-    })
-    .then(postData => {
-        if (!postData) {
-            res.status(404).json({
-                message: 'No post found with this id'
-            });
-
-            return;
-        }
-        res.json(postData);
-    }).catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
-});
-
 module.exports = router;
