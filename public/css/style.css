@@ -4,12 +4,31 @@
     --primary: #e6c3b8;
     --light: #f3ece6;
     --black: #3b3b3b;
-    --grey: #f8f9fa;
-
-    
+    --grey: #f8f9fa;   
 }
+
 .bg-background-color {
     background-color: rgba(243,236,230,0.7);
+}
+
+.primary-color {
+    color: var(--primary);
+}
+
+.primary-bg {
+    background-color: var(--primary);
+}
+
+.light-bg {
+    background-color: var(--light);
+}
+
+.grey-bg {
+    background-color: var(--grey);
+}
+
+.black-bg {
+    background-color: var(--black);
 }
 
 html, 
@@ -48,12 +67,14 @@ a {
     text-decoration: none;
 }
 
-img {
-    object-fit: cover;
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.primary-color {
-    color: var(--primary);
+img {
+    object-fit: cover;
 }
 
 .header {
