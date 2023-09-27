@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Recipe, User, Comment } = require('../models');
-// const withAuth = require('../utils/auth');
 
+// Get route for homepage to get all recipes
 router.get('/', async (req, res) => {
     try {
         // Get all recipes and JOIN with user data
@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
         res.status(500).json(err);
     }
 });
-
+// get route for recipe by id
 router.get('/recipe/:id', async (req, res) => {
     try {
         const recipeData = await Recipe.findByPk(req.params.id, {
@@ -48,6 +48,7 @@ router.get('/recipe/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
+// get route for new recipe
 router.get('/newpost', (req, res) => {
     
     res.render('newpost', {
@@ -55,6 +56,7 @@ router.get('/newpost', (req, res) => {
     });
 }
 );
+// get route for edit recipe
 router.get('/edit/:id', async (req, res) => {
 
 
@@ -69,7 +71,7 @@ router.get('/edit/:id', async (req, res) => {
     }
 }
 );
-         
+        //  get route for login
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
