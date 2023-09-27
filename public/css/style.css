@@ -83,53 +83,6 @@ img {
     border-bottom: 2px solid var(--light);
 }
 
-.header input[type="checkbox"],
-.header .hamburger-lines {
-    display: none;
-}
-
-.header .checkbox {
-  position: absolute;
-  display: block;
-  height: 32px;
-  width: 32px;
-  top: 20px;
-  left: 20px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.header .hamburger {
-  height: 20px;
-  width: 26px;
-  top: 20px;
-  right: 20px;
-  justify-content: space-between;
-}
-
-.header .hamburger-line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: #0e2431;
-}
-
-.header .hamburger-lines .line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
-}
-
-.header .hamburger-lines .line2 {
-  transition: transform 0.2s ease-in-out;
-}
-
-.header .hamburger-lines .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-}
-
 .navigation-bar li,
 .recipe-lists li {
     margin-right: 1.2rem;
@@ -138,6 +91,10 @@ img {
 .navigation-bar li:last-child,
 .recipe-lists li:last-child {
     margin-right: 0;
+}
+
+.navigation-bar a:hover {
+    font-weight: 700;
 }
 
 /* main */
@@ -203,6 +160,74 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+    /* hamburger menu */
+    .hamburger-menu {
+        top: 18px;
+        height: 24px;
+        width: 30px;
+        right: 16px;
+        z-index: 2;
+    }
+
+    .hamburger-menu span {
+        background-color: var(--primary);
+        display: block;
+        height: 4px;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .hamburger-menu .line1 {
+        transform-origin: 20% 0%;
+    }
+
+    .hamburger-menu .line3 {
+        transform-origin: 0% 0%;
+    }
+
+    .hamburger-menu.close .line1 {
+        transform: rotate(45deg);
+        width: 35px;
+    }
+
+    .hamburger-menu.close .line3 {
+        transform: rotate(-45deg);
+        width: 35px;
+    }
+    .hamburger-menu.close .line2 {
+        opacity: 0;
+        width: 0;
+    }
+
+    .navigation-bar {
+        z-index: 1;
+        position: absolute;
+        top: 64px;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transform: translateX(100px);
+        padding-top: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navigation-bar.overlay{
+        display: block;
+        padding: 30px 0;
+        height: auto;
+        transform: translateX(0);
+        background:white;
+        box-shadow: 1px 3px 10px rgba(59, 59, 59, 0.2);
+    }
+
+    .navigation-bar li {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .navigation-bar li:last-child {
+        margin-bottom: 0;
+    }
+
     .recipe-card {
         margin-right: 0;
     }

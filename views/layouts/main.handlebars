@@ -12,40 +12,41 @@
 
 <body>
     <div class="wrap flex flex-column">
-        <header class="flex flex-row w-100 items-center justify-around pv3 b--white fixed z-5 top-0 left-0 bg-white header">
-            <h1>
-                <a href="/">
-                    <img class="db" src="/image/logo.svg" alt="logo">
-                </a>
-            </h1>
-
-            <input type="checkbox" name="" id="">
-            <div class="hamburger absolute z-2 flex flex-column justify-between">
-                <span class="hamburger-line line1"></span>
-                <span class="hamburger-line line2"></span>
-                <span class="hamburger-line line3"></span>
+        <header class="w-100 pv3 fixed z-4 top-0 left-0 bg-white header">
+            <div class="mw8 flex flex-row items-center justify-between center header-box">
+                <h1 class="pl3">
+                    <a href="/">
+                        <img class="db" src="/image/logo.svg" alt="logo">
+                    </a>
+                </h1>
+                
+                <div class="flex flex-column justify-between absolute hamburger-menu">
+                    <span class="hamburger-line line1"></span>
+                    <span class="hamburger-line line2"></span>
+                    <span class="hamburger-line line3"></span>
+                </div>
+                
+                <nav class="pr3 navigation-bar">
+                    <ul class="flex flex-column flex-row-m flex-row-l tc">
+                        <li class="f4">
+                            <a class="" href="/">Home</a>
+                        </li>
+                
+                        {{#if logged_in}}
+                        <li class="f4">
+                            <a class="" href="/mypage">My page</a>
+                        </li>
+                        <li class="f4">
+                            <a href="" class="nav-item nav-link" id="logout">Logout</a>
+                        </li>
+                        {{else}}
+                        <li class="f4">
+                            <a class="nav-item nav-link" href="/login">Login</a>
+                        </li>
+                        {{/if}}
+                    </ul>
+                </nav>
             </div>
-
-            <nav class="navigation-bar">
-                <ul class="flex flex-row">
-                    <li class="f4-l">
-                        <a class="dim" href="/">Home</a>
-                    </li>
-
-                    {{#if logged_in}}
-                    <li class="f4-l">
-                        <a class="dim" href="/mypage">My page</a>
-                    </li>
-                    <li class="f4-l">
-                        <a href="" class="nav-item nav-link dim" id="logout">Logout</a>
-                    </li>
-                    {{else}}
-                    <li class="f4-l">
-                        <a class="nav-item nav-link dim" href="/login">Login</a>
-                    </li>
-                    {{/if}}
-                </ul>
-            </nav>
         </header>
         
         <main class="pb4 main-container overflow-auto">
@@ -70,6 +71,7 @@
     <script src="/js/logout.js"></script>
     {{/if}}
     
+    <script src="/js/common.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         function sweetalert(icon, title) {
