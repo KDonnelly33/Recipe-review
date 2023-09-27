@@ -17,14 +17,14 @@
             {{#each recipes as |recipe|}}
             <li class="flex flex-column flex-row-m flex-row-l justify-between items-center w-100 mr3 mb3 pa3 recipe-card">
                 <div class="flex flex-column flex-row-l items-center items-stretch-m">
-                    <h4 class="f4-l f6 fw5 tc mr2">
+                    <h4 class="f4-l f6 fw5 tc tl-m tl-l mr2">
                         {{recipe.title}}
                     </h4>
                     <p class="f6-l f8">{{format_date recipe.date_created}}</p>
                 </div>
                 <div class="mt2 mt0-m mt0-l">
                     <a href="/recipe/{{recipe.id}}" class="f6 br2 ph3 pv2 dib primary-bg view-recipe">View</a>
-                    <button type="button" class="f6 br2 ph3 pv2 dib grey-bg" id="delete-btn">Delete</button>
+                    <button type="button" class="f6 br2 ph3 pv2 dib grey-bg delete-btn" data-recipe-id="{{id}}">Delete</button>
                 </div>
             </li>
             {{/each}}

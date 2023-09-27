@@ -20,9 +20,9 @@ const loginFormHandler = async (event) => {
 
         if (response.ok) {
             // If successful, redirect the browser to the main page
-            document.location.replace('/');
+            sweetalert("success", "You have successfully logged in");
         } else {
-            alert(response.statusText);
+            sweetalert("error", "Please try again");
         }
     }
 };
@@ -46,9 +46,9 @@ const signupFormHandler = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/profile');
+            sweetalert("success", "Congratulations! You have successfully registered");
         } else {
-            alert(response.statusText);
+            sweetalert("error", "Please try again");
         }
     }
 };
