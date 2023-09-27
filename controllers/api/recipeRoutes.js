@@ -10,7 +10,10 @@ router.post("/", async (req,res)=>{
 
 // ill need to unharcoded this later
    try{
-    const newRecipe = await Recipe.create(body, userId = "3")
+    const newRecipe = await Recipe.create({
+        ...body,
+        user_id: req.session.user_id
+    })
     res.json(newRecipe)
    } catch (error){
          console.log(error)
@@ -18,6 +21,22 @@ router.post("/", async (req,res)=>{
     }
 }
 )
+router.put("/:id", async (req, res) => {
+    try {
+        const updatedRecipe = await Recipe.update(req.body, {
+            where: {
+                id: req.params.id,
+            },
+        });
+        console.log(updatedRecipe)
+        res.json(updatedRecipe);
+    } catch (error) {
+        console.log(error);
+        res.json(error);
+
+    }
+}
+);
 
 router.delete('/:id', (req, res) => {
     Recipe.destroy({
