@@ -1,14 +1,12 @@
+// initialize express router
 const router = require('express').Router();
 const { Recipe } = require('../../models');
-// const withAuth = require('../utils/auth');
 
+// create post route to create a new recipe
 router.post("/", async (req,res)=>{
-    console.log("Post route hit!")
-    console.log(req.body)
+   
    const body = req.body
-   console.log(body)
-
-// ill need to unharcoded this later
+ 
    try{
     const newRecipe = await Recipe.create({
         ...body,
@@ -21,6 +19,7 @@ router.post("/", async (req,res)=>{
     }
 }
 )
+// create a put route to edit/update a recipe by id
 router.put("/:id", async (req, res) => {
     try {
         const updatedRecipe = await Recipe.update(req.body, {
@@ -28,7 +27,7 @@ router.put("/:id", async (req, res) => {
                 id: req.params.id,
             },
         });
-        console.log(updatedRecipe)
+     
         res.json(updatedRecipe);
     } catch (error) {
         console.log(error);
@@ -37,7 +36,7 @@ router.put("/:id", async (req, res) => {
     }
 }
 );
-
+//  added delete route to delete a recipe by id
 router.delete('/:id', (req, res) => {
     Recipe.destroy({
         where: {
