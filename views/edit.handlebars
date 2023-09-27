@@ -1,0 +1,28 @@
+<form class="flex flex-column justify-center items-center w-100 flex-grow" id="edit-form">
+    <h1>Please edit the fields you would like to edit</h1>
+    <div>
+        <input type="hidden" name="recipe-id" value="{{recipe.id}}" />
+        <label class="mr5" for="title">Title:</label>
+        <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="title" name="title" />
+    </div>
+    <div>
+        <label for="ingredients">Ingredients</label>
+        <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="ingredients" name="ingredients" />
+    </div>
+    <div>
+        <label for="instructions">Instructions</label>
+        <input class="input-reset ba b--black-20 pa3 mb2 db w-100 " type="text" id="instructions" name="instructions" />
+    </div>
+    <div>
+        <label for="image">Image URL</label>
+        <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="image" name="image" />
+    </div>
+    <div>
+        <label for="category">Please put 1 for Breakfeast, 2 for Lunch, </br>3 for dinner, 4 for snack, and 5 for desert! </label>
+        <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="integer" id="category" name="category" />
+    </div>
+    <div>
+        <button class="grow pointer f6 link dim  ma2 br3 ph3 pv2 mb2 dib white " id="submit-btn" style="background-color: #e6c3b8" type="submit">Submit</button>
+    </div>
+</form>
+<script src="/js/edit.js"></script>
