@@ -78,8 +78,56 @@ img {
     object-fit: cover;
 }
 
+/* header */
 .header {
     border-bottom: 2px solid var(--light);
+}
+
+.header input[type="checkbox"],
+.header .hamburger-lines {
+    display: none;
+}
+
+.header .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.header .hamburger {
+  height: 20px;
+  width: 26px;
+  top: 20px;
+  right: 20px;
+  justify-content: space-between;
+}
+
+.header .hamburger-line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.header .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.header .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.header .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
 }
 
 .navigation-bar li,
@@ -93,6 +141,10 @@ img {
 }
 
 /* main */
+.main-container {
+    padding-top: 64px;
+}
+
 .main-text {
     background-color: var(--light);
 }
