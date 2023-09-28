@@ -13,57 +13,67 @@
 {{!-- main body --}}
 <body>
     <div class="wrap flex flex-column">
-        <header class="flex flex-row w-100 items-center justify-around pv3 b--white header">
-            <h1>
-                <a href="/">
-                    <img class="db" src="/image/logo.svg" alt="logo">
-                </a>
-            </h1>
-            {{!-- nav bar --}}
-            <nav class="navigation-bar ">
-                <ul class="flex flex-row">
-                    <li class="f4-l">
-                        <a class="dim" href="/">Home</a>
-                    </li>
-                  
-                    {{#if logged_in}}
-                    <li class="f4-l">
-                        <a class="dim" href="/mypage">My page</a>
-                    </li>
-                    <li class="f4-l">
-                        <a href="" class="nav-item nav-link dim" id="logout">Logout</a>
-                    </li>
-                    {{else}}
-                    <li class="f4-l">
-                        <a class="nav-item nav-link dim" href="/login">Login</a>
-                    </li>
-                    {{/if}}
-                </ul>
-            </nav>
+        <header class="w-100 pv3 fixed z-4 top-0 left-0 bg-white header">
+            <div class="mw8 flex flex-row items-center justify-between center header-box">
+                <h1 class="pl3">
+                    <a href="/">
+                        <img class="db" src="/image/logo.svg" alt="logo">
+                    </a>
+                </h1>
+                
+                <div class="flex flex-column justify-between absolute z-2 hamburger-menu">
+                    <span class="db primary-bg hamburger-line line1"></span>
+                    <span class="db primary-bg hamburger-line line2"></span>
+                    <span class="db primary-bg hamburger-line line3"></span>
+                </div>
+                
+                {{!-- nav bar --}}
+                <nav class="pr3 navigation-bar">
+                    <ul class="flex flex-column flex-row-m flex-row-l tc">
+                        <li class="f4">
+                            <a class="" href="/">Home</a>
+                        </li>
+                
+                        {{#if logged_in}}
+                        <li class="f4">
+                            <a class="" href="/mypage">My page</a>
+                        </li>
+                        <li class="f4">
+                            <a href="" class="nav-item nav-link" id="logout">Logout</a>
+                        </li>
+                        {{else}}
+                        <li class="f4">
+                            <a class="nav-item nav-link" href="/login">Login</a>
+                        </li>
+                        {{/if}}
+                    </ul>
+                </nav>
+            </div>
         </header>
         {{!-- where we display other .handlebars --}}
-        <main class="pb4 main-container overflow-auto">
+        <main class="pb5 main-container overflow-auto">
             {{{ body }}}
         </main>
+
+        <footer class="pv3 w-100 grey-bg fixed-l bottom-0">
+            <div class="flex flex-column justify-center py-4 flex-row-l justify-around">
+                <h4 class="tc f4 normal mb3 mb0-l">
+                    Made by: <span class="">Team 3</span>
+                </h4>
+                <div class="flex flex-column justify-center items-center f5 flex-row-l justify-around-l w-60-l">
+                    <a class="b" href="https://github.com/KDonnelly33" target="_blank">Kevin Donnelly</a>
+                    <a class="b" href="https://github.com/YISEO" target="_blank">Joy Yiseo Kwon</a>
+                    <a class="b" href="https://github.com/abdulsamedtma" target="_blank">Abdul Samed Alhassan</a>
+                </div>
+        </footer>
     </div>
-{{!-- footer linking everyone to their github --}}
-<footer class="fixed-l left-0 bottom-0 pv2 w-100 light-bg">
-      <div class="flex flex-column justify-center py-4 flex-row-l justify-around" style="color: #e6c3b8">
-        <h4 class="tc f3 font-semibold">
-          Made by: <span class="" >Team 3</span>
-        </h4>
-        <div class="flex flex-column justify-center underline items-center f4  flex-row-l justify-around-l w-60-l">
-          <a class="hover-black" href = "https://github.com/KDonnelly33" target="_blank">Kevin Donnelly</a>
-         <!--these lines are in the header and tell it to display a link to everyones github page but replace the text of the url with everyones full name-->
-          <a class="hover-black" href="https://github.com/YISEO" target="_blank">Joy Yiseo Kwon</a>
-           
-          <a class="hover-black" href="https://github.com/abdulsamedtma" target="_blank">Abdul Samed Alhassan</a>
-      </div>
-    </footer>
+
+
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
     {{!-- sweetalert import --}}
+    <script src="/js/common.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         function sweetalert(icon, title) {
@@ -74,7 +84,7 @@
                 showConfirmButton: false,
             })
             .then(function(result) {
-                document.location.reload();
+                document.location.replace("/");
             });
         }
     </script>

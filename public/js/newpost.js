@@ -13,9 +13,13 @@ handleNewPost = async (event) => {
         method: 'POST',
         body: JSON.stringify({ title, ingredients, instructions, image_url, category_id }),
         headers: { 'Content-Type': 'application/json' },
-    });
-    // loads the mypage page
-    document.location.replace('/mypage');
+    })
+    .then((response) => { 
+        if (response.status == 200) {
+            sweetalert("success", "The recipe has been successfully deleted");
+        }
+    })
+    .catch(() => sweetalert("error", "Please try again"));
 }
 }
 
