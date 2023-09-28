@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Recipe, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
-
+// get rout for mypage to find all recipes by logged in user_id
 router.get('/', withAuth, async (req, res) => {
     try {
         const recipeData = await Recipe.findAll({

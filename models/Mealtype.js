@@ -1,8 +1,9 @@
+// import sequelize model, datatypes, and connection
 const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
-
+// create Mealtype model
 class Mealtype extends Model {}
-
+// initialize Mealtype model
 Mealtype.init(
     {
         id:{

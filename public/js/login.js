@@ -1,3 +1,4 @@
+// function for login
 const loginFormHandler = async (event) => {
     event.preventDefault();
 
@@ -17,22 +18,22 @@ const loginFormHandler = async (event) => {
                 'Content-Type': 'application/json'
             },
         });
-
+// if response is ok, show sweetalert message; else show error message
         if (response.ok) {
-            // If successful, redirect the browser to the main page
+           
             sweetalert("success", "You have successfully logged in");
         } else {
             sweetalert("error", "Please try again");
         }
     }
 };
-
+// signup function
 const signupFormHandler = async (event) => {
     event.preventDefault();
-
+// collect username and password
     const username = document.querySelector('#name-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
-
+// if both are fill out, send a POST request to the API endpoint
     if (username && password) {
         const response = await fetch('/api/users', {
             method: 'POST',
@@ -44,7 +45,7 @@ const signupFormHandler = async (event) => {
                 'Content-Type': 'application/json'
             },
         });
-
+// if response ok show sweetalert message; else show error message
         if (response.ok) {
             sweetalert("success", "Congratulations! You have successfully registered");
         } else {
@@ -52,6 +53,6 @@ const signupFormHandler = async (event) => {
         }
     }
 };
-
+// click events for login and signup buttons
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
