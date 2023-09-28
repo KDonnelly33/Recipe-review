@@ -1,3 +1,4 @@
+{{!-- main handlebars page --}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,11 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipeEats</title>
-
+{{!-- imports tachyons and style.css --}}
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-
+{{!-- main body --}}
 <body>
     <div class="wrap flex flex-column">
         <header class="w-100 pv3 fixed z-4 top-0 left-0 bg-white header">
@@ -26,6 +27,7 @@
                     <span class="db primary-bg hamburger-line line3"></span>
                 </div>
                 
+                {{!-- nav bar --}}
                 <nav class="pr3 navigation-bar">
                     <ul class="flex flex-column flex-row-m flex-row-l tc">
                         <li class="f4">
@@ -48,7 +50,7 @@
                 </nav>
             </div>
         </header>
-        
+        {{!-- where we display other .handlebars --}}
         <main class="pb5 main-container overflow-auto">
             {{{ body }}}
         </main>
@@ -70,7 +72,7 @@
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
-    
+    {{!-- sweetalert import --}}
     <script src="/js/common.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
@@ -82,7 +84,7 @@
                 showConfirmButton: false,
             })
             .then(function(result) {
-                document.location.reload();
+                document.location.replace("/");
             });
         }
     </script>

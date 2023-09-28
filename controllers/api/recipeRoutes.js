@@ -43,7 +43,9 @@ router.delete('/:id', (req, res) => {
             id: req.params.id
         }
     })
+    // promise that catches the response 
     .then(postData => {
+        // no no post data eroor message
         if (!postData) {
             res.status(404).json({
                 message: 'No post found with this id'
@@ -51,10 +53,11 @@ router.delete('/:id', (req, res) => {
 
             return;
         }
-
+//  send response with message
         res.status(200).json({
             message: 'Recipe deleted successfully'
         });
+        // error handler
     }).catch(err => {
         console.log(err);
         res.status(500).json(err);

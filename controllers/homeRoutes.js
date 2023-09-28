@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Recipe, User, Comment } = require('../models');
+const withAuth = require('../utils/auth');
 
 // Get route for homepage to get all recipes
 router.get('/', async (req, res) => {
@@ -25,7 +26,7 @@ router.get('/', async (req, res) => {
     }
 });
 // get route for recipe by id
-router.get('/recipe/:id', async (req, res) => {
+router.get('/recipe/:id', withAuth, async (req, res) => {
     try {
         const recipeData = await Recipe.findByPk(req.params.id, {
         include: [
@@ -50,7 +51,7 @@ router.get('/recipe/:id', async (req, res) => {
 });
 // get route for new recipe
 router.get('/newpost', (req, res) => {
-    
+    // render newpost page
     res.render('newpost', {
         logged_in: req.session.logged_in
     });
@@ -62,10 +63,12 @@ router.get('/edit/:id', async (req, res) => {
 
         try {
         const recipeData = await Recipe.findByPk(req.params.id);
+        // if recipe data is found, render edit page
         if (recipeData) {
             const recipe = recipeData.get({ plain: true });
             res.render('edit', { recipe });
         }
+        // error handler
     } catch (err) {
         res.status(500).json(err);
     }
@@ -78,7 +81,7 @@ router.get('/login', (req, res) => {
         res.redirect('/');
         return;
     }
-
+// reder login page
     res.render('login');
 });
 
