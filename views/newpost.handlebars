@@ -1,26 +1,42 @@
-<form class="flex flex-column justify-center items-center w-100 flex-grow" id="newpost-form">
-    <div>
-        <label class="mr5" for="title">Title:</label>
-        <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="title" name="title" />
-    </div>
-    <div>
-        <label for="ingredients">Ingredients</label>
-        <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="ingredients" name="ingredients" />
-    </div>
-    <div>
-        <label for="instructions">Instructions</label>
-        <input class="input-reset ba b--black-20 pa3 mb2 db w-100 " type="text" id="instructions" name="instructions" />
-    </div>
-    <div>
-        <label for="image">Image URL</label>
-        <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="image" name="image" />
-    </div>
-    <div>
-        <label for="category">Please put 1 for Breakfeast, 2 for Lunch, </br>3 for dinner, 4 for snack, and 5 for desert! </label>
-        <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="integer" id="category" name="category" />
-    </div>
-    <div>
-        <button class="grow pointer f6 link dim  ma2 br3 ph3 pv2 mb2 dib white " style="background-color: #e6c3b8" type="submit">Submit</button>
-    </div>
-</form>
+<section class="flex flex-column justify-center items-center pt5 ph3">
+    <div class="f2-l f3 b">Fill the form</div>
+    <p class="mt3 f4-l f5">
+        Would you like to showcase your own recipe?<br>
+        Please fill out the following form and submit it.
+    </p>
+
+    <form class=" mt4 tl" id="newpost-form">
+        {{> post-form}}
+        {{!-- <div>
+            <input type="hidden" name="recipe-id" value="{{recipe.id}}" />
+
+            <label class="mr5" for="title">Title:</label>
+            <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="title" name="title" />
+        </div>
+        <div>
+            <label for="ingredients">Ingredients</label>
+            <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="ingredients"
+                name="ingredients" />
+        </div>
+        <div>
+            <label for="instructions">Instructions</label>
+            <input class="input-reset ba b--black-20 pa3 mb2 db w-100 " type="text" id="instructions"
+                name="instructions" />
+        </div>
+        <div>
+            <label for="image">Image URL</label>
+            <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="text" id="image" name="image" />
+        </div>
+        <div>
+            <label for="category">Please put 1 for Breakfeast, 2 for Lunch, </br>3 for dinner, 4 for snack, and 5 for
+                desert! </label>
+            <input class="input-reset ba b--black-20 pa3 mb2 db w-100" type="integer" id="category" name="category" />
+        </div>
+        <div>
+            <button class="grow pointer f6 link dim  ma2 br3 ph3 pv2 mb2 dib white " style="background-color: #e6c3b8"
+                type="submit">Submit</button>
+        </div> --}}
+    </form>
+</section>
+
 <script src="/js/newpost.js"> </script>

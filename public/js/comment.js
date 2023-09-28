@@ -1,3 +1,11 @@
+// recipe instructions
+const instructions = document.querySelector(".instructions");
+const text = instructions.innerText;
+const modifiedText = text.replace(/(2\.|3\.)/g, '<br>$1');
+
+instructions.innerHTML = modifiedText;
+
+// comment handler
 const commentHandler = async (event) => {
     event.preventDefault();
     const recipe_id = document.querySelector('input[name="recipe-id"]').value;

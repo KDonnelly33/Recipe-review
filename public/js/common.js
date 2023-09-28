@@ -1,3 +1,4 @@
+// hamburger menu
 var burgerMenu = document.querySelector(".hamburger-menu");
 var overlay = document.querySelector(".navigation-bar");
 

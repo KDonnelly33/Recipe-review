@@ -45,6 +45,8 @@ ul,
 li,
 form,
 label,
+input,
+textarea
 footer,
 header,
 nav,
@@ -57,6 +59,10 @@ section{
     vertical-align: baseline;
     color: var(--dark);
     box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
 }
 
 ul,
@@ -130,6 +136,15 @@ img {
     background-color: var(--primary);
 }
 
+/* login section */
+.form-wrap > * {
+    box-shadow: 1px 3px 10px rgba(59, 59, 59, 0.2);
+}
+
+.form-button button {
+    padding: 12px 0;
+}
+
 /* media screen */
 @media screen and (max-width: 959px) {
     .main-section {
@@ -166,12 +181,9 @@ img {
         height: 24px;
         width: 30px;
         right: 16px;
-        z-index: 2;
     }
 
     .hamburger-menu span {
-        background-color: var(--primary);
-        display: block;
         height: 4px;
         transition: transform 0.4s ease-in-out;
     }
