@@ -1,6 +1,15 @@
 # Recipe Review Website
 
-![Website Screenshot](screenshot.png)
+![Home Page](public/image/homePage.png)
+
+![Bottom Page](public/image/bottomPage.png)
+
+![Login / Page](public/image/loginSign.png)
+
+![Login Authentication](public/image/loginAuth.png)
+
+![Add Recipe Page](public/image/addRecipePage.png)
+
 
 ## Table of Contents
 
@@ -8,8 +17,12 @@
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Technologies Used](#technologies-used)
 - [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Questions](#questions)
+- [Contribution](#contribution)
+
 
 ## Introduction
 
@@ -68,7 +81,9 @@ To begin your culinary adventure on the Recipe Review Website, follow these step
    ```
 
 6. **Access**: Access the website through your web browser at `http://localhost:3001` or the specified port.
-
+   [Click Here to access the website](https://protected-escarpment-11572-48e550723f6b.herokuapp.com/)
+   
+   
 ## Usage
 
 Once the website is up and running:
@@ -81,7 +96,44 @@ Once the website is up and running:
 
 - **Connect with Others**: Build your profile, connect with fellow users, and participate in discussions and culinary adventures.
 
-## Contributing
+
+## Technologies
+Project is created with 
+* [Javascript](https://www.javascript.com/)
+* [Node.js](https://nodejs.org/en/)
+* [Sequelize](https://www.npmjs.com/package/sequelize)
+* [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
+* [MySQL2](https://www.npmjs.com/package/mysql2)
+* [Express](https://www.npmjs.com/package/express)
+* [Dotenv](https://www.npmjs.com/package/dotenv)
+* [bcrypt](https://www.npmjs.com/package/bcrypt)
+* [express-handlebars](https://www.npmjs.com/package/express-handlebars)
+* [express-session](https://www.npmjs.com/package/express-session-sequelize)
+* [tachyons](https://www.npmjs.com/package/tachyons) 
+* [Sweetalert2](https://www.npmjs.com/package/sweetalert2)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). See the [License](LICENSE) file for more details.
+
+## Acknowledgments
+
+Special thanks to our TA for taking the time to help us resolve our merge conflict and providing valuable guidance throughout this project.
+
+## Questions
+
+Have additional questions? Click the links below to reach us through our GitHub account or Email address.
+
+- [Link to Github](https://github.com/KDonnelly33)
+- [Connect with Kevin via Email](mailto:Kevin.donnelly3@gmail.com)
+
+- [Link to Github](https://github.com/YISEO)
+- [Connect with Joy via Email](mailto:yiseo1122@gmail.com)
+
+- [Link to Github](https://github.com/abdulsamedtma)
+- [Connect with Abdul via Email](mailto:abdulsamedtma@gmail.com)
+
+## Contribution
 
 We welcome contributions from the community to enhance and expand the Recipe Review Website. To contribute:
 
@@ -95,14 +147,5 @@ We welcome contributions from the community to enhance and expand the Recipe Rev
 
 5. Your contribution will undergo review, and upon approval, it will be merged into the main codebase.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). See the [License](LICENSE) file for more details.
-
----
-
 Thank you for choosing the Recipe Review Website. We hope you enjoy your culinary journey with us!
 
-For inquiries or support, please contact [your email address].
-
----
