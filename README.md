@@ -127,7 +127,9 @@ Have additional questions? Click the links below to reach us through our GitHub 
 - [Link to Github](https://github.com/KDonnelly33)
 - [Connect with Kevin via Email](mailto:Kevin.donnelly3@gmail.com)
 
-- [Link to Github](https://github.com/abdulsamedtma)
+
+- [Link to Github](https://github.com/YISEO
+
 - [Connect with Joy via Email](mailto:yiseo1122@gmail.com)
 
 - [Link to Github](https://github.com/abdulsamedtma)
