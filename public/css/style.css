@@ -174,8 +174,8 @@ img {
     }
 }
 
-@media screen and (max-width: 480px) {
-    /* hamburger menu */
+@media screen and (max-width: 768px) {
+/* hamburger menu */
     .hamburger-menu {
         top: 18px;
         height: 24px;
@@ -239,7 +239,9 @@ img {
     .navigation-bar li:last-child {
         margin-bottom: 0;
     }
+}
 
+@media screen and (max-width: 480px) {
     .recipe-card {
         margin-right: 0;
     }
