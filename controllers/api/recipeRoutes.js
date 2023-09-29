@@ -2,11 +2,19 @@
 const router = require('express').Router();
 const { Recipe } = require('../../models');
 
+// get route
+router.get("/", async (req, res) => {
+    try {
+        const recipeData = await Recipe.findAll();
+        res.status(200).json(recipeData);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
+
 // create post route to create a new recipe
 router.post("/", async (req,res)=>{
-   
    const body = req.body
- 
    try{
     const newRecipe = await Recipe.create({
         ...body,

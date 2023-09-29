@@ -8,7 +8,7 @@ router.get('/', async(req, res) => {
     } catch(err) {
         res.status(400).json(err);
     }
-})
+});
 
 // post route for new user
 router.post('/', async (req, res) => {
