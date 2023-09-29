@@ -89,6 +89,10 @@ img {
     border-bottom: 2px solid var(--light);
 }
 
+.navigation-bar > ul {
+    flex-direction: row;
+}
+
 .navigation-bar li,
 .recipe-lists li {
     margin-right: 1.2rem;
@@ -175,7 +179,11 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-/* hamburger menu */
+    .navigation-bar > ul {
+        flex-direction: column;
+    }
+
+    /* hamburger menu */
     .hamburger-menu {
         top: 18px;
         height: 24px;
