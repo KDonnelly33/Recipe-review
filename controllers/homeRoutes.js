@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Recipe, User, Comment } = require('../models');
+const { Recipe, User, Comment, Mealtype } = require('../models');
 const withAuth = require('../utils/auth');
 
 // Get route for homepage to get all recipes
@@ -58,7 +58,7 @@ router.get('/newpost', (req, res) => {
 }
 );
 // get route for edit recipe
-router.get('/edit/:id', async (req, res) => {
+router.get('/edit/:id', withAuth, async (req, res) => {
 
 
         try {
@@ -85,4 +85,19 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+// route to get all mealtypes by id and render the mealtypes page
+router.get('/mealtypes', async (req, res) => {
+    try {
+        const mealData = await Mealtype.findAll();
+        const meals = mealData.map((meal) => meal.get({ plain: true }));
+        res.render('mealtypes', { meals });
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+}
+);
+
+
 module.exports = router;
+ 
